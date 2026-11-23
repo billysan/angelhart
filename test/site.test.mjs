@@ -19,7 +19,7 @@ test('every film keeps all future content sections',async()=>{
  for(const film of films){const html=await readFile(`dist/work/${film.slug}/index.html`,'utf8');for(const title of ['SYNOPSIS','TRAILER','STILLS','CAST &amp; CREW','FESTIVALS &amp; AWARDS','RELATED'])assert.ok(html.includes(title),`${film.slug}: ${title}`);}
 });
 test('contact email links to the supplied address',async()=>{
- const html=await readFile('dist/contact/index.html','utf8');assert.ok(html.includes('href="mailto:inquires@sharonangelhart.com"'));assert.doesNotMatch(html,/Email to come|href="(?:null|undefined)"/);
+ const html=await readFile('dist/contact/index.html','utf8');assert.ok(html.includes('href="mailto:suay.angelhart@gmail.com"'));assert.doesNotMatch(html,/Email to come|href="(?:null|undefined)"/);
 });
 test('neon lotus splash opens work, while background remains on every route',async()=>{
  const home=await readFile('dist/index.html','utf8');

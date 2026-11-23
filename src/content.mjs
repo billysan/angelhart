@@ -9,7 +9,7 @@ export const media = [
   {id:'cinema-qa',type:'Podcast',outlet:'Cinema Q&A · Episode 51',title:'From the first film to the next',language:'Hebrew',image:'/assets/sharon-portrait.jpg',alt:'Sharon seated at home on a yellow sofa',digestLabel:'English overview · publisher description',digest:["In a conversation with Avi Ludmir, Sharon Angelhart discusses the long development of her first feature, her childhood in Jerusalem, and how she came to filmmaking.","The episode description also highlights casting, the 17-day shoot, her work as a script editor, and the next film in development."],originalLabel:'Watch podcast',url:'https://www.youtube.com/watch?v=L5X_ytFYW04'},
   {id:'uk-festival',type:'Festival',outlet:'UK Jewish Film',title:'Cuz You’re Ugly · Festival listing',language:'English',image:'/assets/stills/cuz-youre-ugly-4.jpg',alt:'A still from Cuz You’re Ugly',digestLabel:'Festival listing',digest:['Visit the festival’s page for film information and screening details.'],originalLabel:'Go to festival listing',url:'https://ukjewishfilm.org/event/cuz-youre-ugly-qa/'}
 ];
-export const contacts = {email:'inquires@sharonangelhart.com',representation:null,imdb:null,letterboxd:null,instagram:null};
+export const contacts = {email:'suay.angelhart@gmail.com',representation:null,imdb:null,letterboxd:null,instagram:null};
 
 export const featureStills = [
   {image:'/assets/stills/cuz-youre-ugly-6.jpg',alt:'Two women outside a cinema beneath glowing pink and blue neon signs'},
