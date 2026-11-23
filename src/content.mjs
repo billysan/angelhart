@@ -1,0 +1,20 @@
+// Replace null values and placeholder copy as approved material becomes available.
+export const films = [
+  {slug:'cuz-youre-ugly',title:'Cuz You’re Ugly',kind:'Feature film',role:'Written and directed by Sharon Angelhart',image:'/assets/stills/cuz-youre-ugly-3.jpg',alt:'Two women eating ice lollies in a still from Cuz You’re Ugly',synopsis:'Avigail returns to her family’s Jerusalem apartment with plans for a weekend of her own. When her younger sister reveals an unexpected pregnancy, those plans give way to a complicated encounter with family, responsibility, and growing up.',source:'https://ukjewishfilm.org/event/cuz-youre-ugly-qa/',year:null,runtime:null,trailer:null,credits:null},
+  ...['In Your Hands','Nightswimming','Money'].map(title=>({slug:title.toLowerCase().replaceAll(' ','-'),title,kind:'Short film',role:null,image:null,alt:null,synopsis:null,source:null,year:null,runtime:null,trailer:null,credits:null}))
+];
+export const media = [
+  {id:'timeout-review',type:'Review',outlet:'Time Out Tel Aviv',author:'Yael Shuv',title:'On Cuz You’re Ugly',language:'Hebrew',image:'/assets/stills/cuz-youre-ugly-2.jpg',alt:'The sisters beside a swimming pool in Cuz You’re Ugly',digestLabel:'English digest',digest:["Yael Shuv gives the film four stars, praising its compassionate approach to an unconventional heroine. The review highlights the contrast between Avigail’s defensive manner and underlying vulnerability, and the convincing bond between the sisters.","Shuv singles out the natural dialogue, the performances of Riki Reif Sinai and Ori Avinoam, and the film’s ability to find humor in uncomfortable family situations."],originalLabel:'Go to original review',url:'https://timeout.co.il/כי-את-מכוערת-ביקורת/'},
+  {id:'cinema-city',type:'Interview',outlet:'Cinema City · Close Up',title:'A conversation about Cuz You’re Ugly',language:'Hebrew',image:'/assets/on-set.jpg',alt:'The two leads of Cuz You’re Ugly photographed together',digestLabel:'English overview · publisher description',digest:["Sharon Angelhart and lead actor Riki Reif Sinai discuss Cuz You’re Ugly in Cinema City’s Close Up series. The publisher introduces the conversation as a look at growing up, the film’s inspiration, and the stories behind its making."],originalLabel:'Watch conversation',url:'https://www.youtube.com/watch?v=Z1O6rvdfImQ'},
+  {id:'cinema-qa',type:'Podcast',outlet:'Cinema Q&A · Episode 51',title:'From the first film to the next',language:'Hebrew',image:'/assets/sharon-portrait.jpg',alt:'Sharon seated at home on a yellow sofa',digestLabel:'English overview · publisher description',digest:["In a conversation with Avi Ludmir, Sharon Angelhart discusses the long development of her first feature, her childhood in Jerusalem, and how she came to filmmaking.","The episode description also highlights casting, the 17-day shoot, her work as a script editor, and the next film in development."],originalLabel:'Watch podcast',url:'https://www.youtube.com/watch?v=L5X_ytFYW04'},
+  {id:'uk-festival',type:'Festival',outlet:'UK Jewish Film',title:'Cuz You’re Ugly · Festival listing',language:'English',image:'/assets/stills/cuz-youre-ugly-4.jpg',alt:'A still from Cuz You’re Ugly',digestLabel:'Festival listing',digest:['Visit the festival’s page for film information and screening details.'],originalLabel:'Go to festival listing',url:'https://ukjewishfilm.org/event/cuz-youre-ugly-qa/'}
+];
+export const contacts = {email:'inquires@sharonangelhart.com',representation:null,imdb:null,letterboxd:null,instagram:null};
+
+export const featureStills = [
+  {image:'/assets/stills/cuz-youre-ugly-6.jpg',alt:'Two women outside a cinema beneath glowing pink and blue neon signs'},
+  {image:'/assets/stills/cuz-youre-ugly-2.jpg',alt:'Two sisters relaxing on sun loungers beside a swimming pool'},
+  {image:'/assets/stills/cuz-youre-ugly-3.jpg',alt:'Two women eating ice lollies outside a shop'},
+  {image:'/assets/stills/cuz-youre-ugly-4.jpg',alt:'A woman looking at her reflection in a mirror'},
+  {image:'/assets/stills/cuz-youre-ugly-5.jpg',alt:'A woman taking a mirror photograph in green light'}
+];
