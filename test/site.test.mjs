@@ -21,13 +21,13 @@ test('every film keeps all future content sections',async()=>{
 test('contact email links to the supplied address',async()=>{
  const html=await readFile('dist/contact/index.html','utf8');assert.ok(html.includes('href="mailto:suay.angelhart@gmail.com"'));assert.doesNotMatch(html,/Email to come|href="(?:null|undefined)"/);
 });
-test('neon lotus splash opens work, while background remains on every route',async()=>{
+test('plus entrance opens work, while background remains on every route',async()=>{
  const home=await readFile('dist/index.html','utf8');
  const work=await readFile('dist/work/index.html','utf8');
  assert.match(home,/class="intro-screen"/);
  assert.doesNotMatch(home,/matrix-rain/);
  assert.match(home,/href="\/work\/" aria-label="Enter works"/);
- assert.match(home,/src="\/assets\/lotus-neon.svg"/);
+ assert.match(home,/class="plus-entry" href="\/work\/"/);assert.doesNotMatch(home,/lotus/);
  assert.match(work,/class="section work-section"/);
  for(const route of routes){
   const html=await readFile(`dist${route}index.html`,'utf8');
