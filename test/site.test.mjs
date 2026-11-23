@@ -21,10 +21,14 @@ test('every film keeps all future content sections',async()=>{
 test('contact email links to the supplied address',async()=>{
  const html=await readFile('dist/contact/index.html','utf8');assert.ok(html.includes('href="mailto:inquires@sharonangelhart.com"'));assert.doesNotMatch(html,/Email to come|href="(?:null|undefined)"/);
 });
-
-test('portfolio is the landing content and the background exists on each route',async()=>{
+test('neon lotus splash opens work, while background remains on every route',async()=>{
  const home=await readFile('dist/index.html','utf8');
- assert.match(home,/class="section work-section"/);
+ const work=await readFile('dist/work/index.html','utf8');
+ assert.match(home,/class="intro-screen"/);
+ assert.match(home,/class="matrix-rain"/);
+ assert.match(home,/href="\/work\/" aria-label="Enter works"/);
+ assert.match(home,/src="\/assets\/lotus-neon.svg"/);
+ assert.match(work,/class="section work-section"/);
  for(const route of routes){
   const html=await readFile(`dist${route}index.html`,'utf8');
   assert.match(html,/class="home-background"/);
