@@ -175,9 +175,9 @@ body.intro-page{overflow:hidden}
 .matrix-rain{position:absolute;inset:0;overflow:hidden;display:flex;justify-content:space-around;z-index:-1;opacity:.54;pointer-events:none;mask-image:linear-gradient(to bottom,transparent,#000 15%,#000 85%,transparent)}
 .matrix-rain span{writing-mode:vertical-rl;text-orientation:upright;white-space:nowrap;font:14px/1.1 monospace;letter-spacing:8px;color:#45a9ff;text-shadow:0 0 9px #1a9dff,0 0 22px #006dff;opacity:.45;animation:matrix-fall calc(9s + var(--i)*.19s) linear infinite;animation-delay:var(--delay)}
 @keyframes matrix-fall{from{transform:translateY(-125vh)}to{transform:translateY(125vh)}}
-.lotus-entry{position:relative;display:flex;flex-direction:column;align-items:center;gap:0;width:min(72vw,620px);padding:20px;transform:translateY(-1vh);transition:transform .45s ease,filter .45s ease;filter:drop-shadow(0 0 9px #ff42ba) drop-shadow(0 0 35px #ff149388) drop-shadow(0 0 65px #fc0b8b77)}
+.lotus-entry{position:relative;display:flex;flex-direction:column;align-items:center;gap:0;width:min(40vw,150px);padding:20px;transform:translateY(-1vh);transition:transform .45s ease,filter .45s ease;filter:drop-shadow(0 0 9px #ff42ba) drop-shadow(0 0 35px #ff149388) drop-shadow(0 0 65px #fc0b8b77)}
 .lotus-entry img{height:auto;object-fit:contain}
-.lotus-entry span{font-size:clamp(11px,1.5vw,15px);letter-spacing:.32em;color:#ffbfeb;text-shadow:0 0 12px #ff48bc;margin-top:-12px}
+.lotus-entry span{white-space:nowrap;font-size:11px;letter-spacing:.28em;color:#ffbfeb;text-shadow:0 0 12px #ff48bc;margin-top:-12px}
 .lotus-entry:hover,.lotus-entry:focus-visible{transform:translateY(-1vh) scale(1.055);filter:drop-shadow(0 0 14px #ff7bda) drop-shadow(0 0 48px #ff1493)}
-@media(max-width:720px){.lotus-entry{width:min(94vw,500px)}.matrix-rain span{font-size:11px;letter-spacing:5px}}
+@media(max-width:720px){.lotus-entry{width:min(40vw,130px)}.matrix-rain span{font-size:11px;letter-spacing:5px}}
 @media(prefers-reduced-motion:reduce){.matrix-rain span{animation:none}.lotus-entry{transition:none}}
