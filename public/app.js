@@ -48,11 +48,11 @@ if(background){
 // the shared background alive while only the page content crossfades.
 const main=document.querySelector('#main');
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
-const canonicalPath=path=>['/','/index.html','/work/','/work/index.html'].includes(path)?'/':path;
+const canonicalPath=path=>['/','/index.html'].includes(path)?'/':['/work/','/work/index.html'].includes(path)?'/work/':path;
 let currentPath=canonicalPath(location.pathname);
 let navigationId=0,pendingNavigation=null;
 const fade=(element,from,to,duration)=>element.animate([{opacity:from},{opacity:to}],{duration,easing:'ease-in-out'}).finished.catch(()=>{});
-if(main?.dataset.page==='home'&&!reducedMotion.matches)fade(main,0,1,1500);
+if(main?.dataset.page==='work'&&!reducedMotion.matches)fade(main,0,1,1500);
 
 function closeDialogs(){document.querySelectorAll('dialog[open]').forEach(dialog=>dialog.close());}
 function closeNavigation(){
@@ -69,7 +69,8 @@ async function navigate(url,{push=true,scrollY=0}={}){
     const next=new DOMParser().parseFromString(await response.text(),'text/html');
     const nextMain=next.querySelector('#main');
     if(!nextMain||id!==navigationId)return;
-    const home=nextMain.dataset.page==='home';
+    const intro=nextMain.dataset.page==='intro';
+    const home=nextMain.dataset.page==='work';
     closeDialogs();closeNavigation();
     const update=()=>{
       if(id!==navigationId)return;
@@ -78,6 +79,7 @@ async function navigate(url,{push=true,scrollY=0}={}){
       main.dataset.page=nextMain.dataset.page;
       document.title=next.title;
       document.body.classList.toggle('landing-page',home);
+      document.body.classList.toggle('intro-page',intro);
       nav.querySelectorAll('a').forEach(anchor=>{
         if(canonicalPath(new URL(anchor.href).pathname)===canonicalPath(url.pathname))anchor.setAttribute('aria-current','page');
         else anchor.removeAttribute('aria-current');
