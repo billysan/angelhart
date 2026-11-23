@@ -25,7 +25,7 @@ test('neon lotus splash opens work, while background remains on every route',asy
  const home=await readFile('dist/index.html','utf8');
  const work=await readFile('dist/work/index.html','utf8');
  assert.match(home,/class="intro-screen"/);
- assert.match(home,/class="matrix-rain"/);
+ assert.doesNotMatch(home,/matrix-rain/);
  assert.match(home,/href="\/work\/" aria-label="Enter works"/);
  assert.match(home,/src="\/assets\/lotus-neon.svg"/);
  assert.match(work,/class="section work-section"/);
