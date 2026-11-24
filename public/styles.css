@@ -131,13 +131,13 @@ main{view-transition-name:page-content;outline:none}
 :root:has(body.landing-page)::view-transition-new(page-content){animation-duration:1.5s}
 @keyframes page-in{from{opacity:0}to{opacity:1}}
 @keyframes page-out{from{opacity:1}to{opacity:0}}
-.press-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.press-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:20px}
 .press-card{min-width:0}
 .press-card>a{display:block;height:100%;border:1px solid var(--line);background:transparent;transition:border-color .2s,box-shadow .2s}
 .press-card>a:hover{border-color:var(--pink);box-shadow:0 0 16px #ff69b422}
 .press-image{aspect-ratio:4/3;overflow:hidden}
 .press-image img{height:100%;object-fit:cover}
-.press-caption{padding:22px}
+.press-caption{padding:16px}
 .press-caption h3{font-size:19px;line-height:1.45;margin:12px 0 18px}
 .press-outlet{color:var(--muted);font-size:12px}
 .press-dialog{width:min(680px,calc(100vw - 40px));max-height:calc(100svh - 48px);padding:0;border:1px solid var(--pink);background:#171217;color:var(--text);box-shadow:0 0 7px #ff69b488,0 0 35px #ff69b433,inset 0 0 16px #ff69b40d;overflow:auto}
@@ -151,8 +151,8 @@ main{view-transition-name:page-content;outline:none}
 .digest-source>span{font-size:11px;color:var(--muted)}
 .modal-close{position:absolute;right:12px;top:12px;width:40px;height:40px;border:0;background:none;font-size:28px;color:var(--pink)}
 .modal-open{overflow:hidden}
-@media(max-width:1000px){.press-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:720px){.press-grid{grid-template-columns:1fr;gap:26px}.press-digest{padding:48px 24px 28px}.press-digest h2{font-size:22px}}
+@media(max-width:1000px){.press-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:720px){.press-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.press-caption{padding:14px}.press-caption h3{font-size:15px;overflow-wrap:normal;hyphens:auto}.press-digest{padding:48px 24px 28px}.press-digest h2{font-size:22px}}
 @media(prefers-reduced-motion:reduce){::view-transition-old(page-content),::view-transition-new(page-content){animation:none}.press-card>a{transition:none}}
 
 .credits-list{margin:24px 0 0}
