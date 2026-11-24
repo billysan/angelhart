@@ -51,7 +51,7 @@ body{isolation:isolate}
 .placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:180px;aspect-ratio:16/10;padding:24px;background:var(--surface);border:1px solid var(--line);color:var(--muted);text-align:center;font-size:13px}
 .frame-mark{width:30px;height:22px;border:1px solid #ff69b466}
 .film-image>.placeholder{height:100%;width:100%;aspect-ratio:auto}
-.biography{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(32px,6vw,88px)}
+.biography{display:grid;grid-template-columns:.57fr 1.1fr;gap:clamp(32px,6vw,88px)}
 .portrait{height:auto;object-fit:contain}
 .bio-copy>p{color:var(--muted);max-width:560px}
 .bio-copy .text-link{margin-top:24px}
@@ -115,7 +115,7 @@ body{isolation:isolate}
 
  .film-grid .film-image{aspect-ratio:16/10}
  .card-title{flex-direction:row;gap:12px}
- .portrait{height:auto}
+ .portrait{height:auto;width:70%}
  .film-cover{aspect-ratio:4/3}
  .film-facts>div{font-size:12px}
  .trailer-placeholder{min-height:200px}
