@@ -13,15 +13,8 @@ if(menu && nav){
 const background=document.querySelector('.home-background');
 if(background){
   const slides=[...background.querySelectorAll('[data-background-slide]')];
-  const play=document.querySelector('[data-background-play]');
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
   let index=0,playing=!reduced.matches,timer=null,busy=false;
-  play.hidden=false;
-  function updatePlay(){
-    play.setAttribute('aria-label',playing?'Pause background images':'Play background images');
-    play.setAttribute('aria-pressed',String(!playing));
-    play.querySelector('svg').innerHTML=playing?'<path d="M9 6v12M15 6v12"/>':'<path d="m9 5 10 7-10 7Z"/>';
-  }
   async function advance(){
     if(busy)return;
     busy=true;
@@ -38,10 +31,9 @@ if(background){
     finally{busy=false;}
   }
   function schedule(){clearInterval(timer);if(playing&&!document.hidden)timer=setInterval(advance,8000);}
-  play.addEventListener('click',()=>{playing=!playing;updatePlay();schedule();});
   document.addEventListener('visibilitychange',schedule);
-  reduced.addEventListener('change',()=>{if(reduced.matches)playing=false;updatePlay();schedule();});
-  updatePlay();schedule();
+  reduced.addEventListener('change',()=>{playing=!reduced.matches;schedule();});
+  schedule();
 }
 
 // Native page links remain usable without JavaScript; enhanced navigation keeps
