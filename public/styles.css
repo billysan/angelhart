@@ -162,7 +162,8 @@ main{view-transition-name:page-content;outline:none}
 @media(max-width:720px){.credits-list>div{gap:14px}.credits-list dd{font-size:13px}}
 
 .film-cover.has-poster{aspect-ratio:1200/1693}
-.film-cover.has-poster{max-width:560px}
+.film-cover.has-poster{width:min(560px,calc(100% - 2*var(--gutter)));margin-inline:auto}
+.film-heading:has(+.film-cover.has-poster){text-align:center}
 
 /* Minimal plus entrance; existing cinematic slide show remains behind it. */
 body.intro-page{overflow:hidden}
