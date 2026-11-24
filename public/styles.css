@@ -36,8 +36,6 @@ body{isolation:isolate}
 .background-slide img{object-fit:cover;filter:saturate(.8) contrast(.94)}
 .home-background:after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 20%,#15101480 100%);pointer-events:none}
 .background-grain{position:absolute;inset:0;z-index:1;background:url('/assets/grain.svg') repeat;opacity:.085;mix-blend-mode:soft-light}
-.background-pause{position:fixed;right:var(--gutter);bottom:88px;z-index:2;display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--pink);border-radius:3px;background:#301925cc;color:var(--pink);box-shadow:0 0 10px #ff69b422;text-shadow:none}
-.background-pause:hover{color:#ffd4ed;background:#492136dd;text-shadow:none}
 .page-heading{padding:32px var(--gutter) 20px}
 .section{padding:38px var(--gutter)}
 .section+.section{padding-top:20px}
@@ -167,7 +165,7 @@ main{view-transition-name:page-content;outline:none}
 
 /* Minimal plus entrance; existing cinematic slide show remains behind it. */
 body.intro-page{overflow:hidden}
-.intro-page .site-header,.intro-page .site-footer,.intro-page .background-pause{display:none!important}
+.intro-page .site-header,.intro-page .site-footer{display:none!important}
 .intro-page main{max-width:none;display:flex;min-height:100svh}
 .intro-page .background-slide.is-active{opacity:.42}
 .intro-screen{position:relative;isolation:isolate;display:grid;place-items:center;min-height:100svh;width:100%;overflow:hidden;background:radial-gradient(ellipse at center,#09081838 3%,#02040caa 85%)}
