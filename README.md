@@ -18,7 +18,7 @@ All four film pages retain trailer, stills, credits, recognition, and press sect
 
 Film stills, portrait, and on-set photography were imported from the user-provided Google Drive folder. Per-file sources are recorded in `public/assets/stills/sources.json`. These are self-hosted JPEG previews; the original TIFFs remain in Drive. Confirm required photo credits before launch.
 
-Biography draft: https://kneller.co.il/שרון-אנגלהרט/
+Biography draft: https://kneller.co.il/sharon-engelhardt/?lang=en
 
 Feature synopsis paraphrased from: https://ukjewishfilm.org/event/cuz-youre-ugly-qa/
 
