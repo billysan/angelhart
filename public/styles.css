@@ -200,3 +200,11 @@ body.intro-page{overflow:hidden}
 
 /* Preserve the Cinema Q&A interview-frame composition without cutting off Sharon. */
 .press-card:has([data-press-modal="press-cinema-qa"]) .press-image img{object-position:center 48%;object-fit:contain;background:#0b090c}
+
+/* The podcast screenshots have already been physically cropped to the video frame; no letterboxing. */
+.press-card:has([data-press-modal="press-cinema-qa"]) .press-image,
+.press-card:has([data-press-modal="press-cinema-city"]) .press-image,
+.press-card:has([data-press-modal="press-youtube-podcast-gmhbgfcqzoi"]) .press-image{aspect-ratio:16/9}
+.press-card:has([data-press-modal="press-cinema-qa"]) .press-image img,
+.press-card:has([data-press-modal="press-cinema-city"]) .press-image img,
+.press-card:has([data-press-modal="press-youtube-podcast-gmhbgfcqzoi"]) .press-image img{object-fit:cover;object-position:center;background:transparent}
