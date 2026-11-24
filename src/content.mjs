@@ -29,7 +29,7 @@ export const featureStills = [
 // Film page details: synopsis, cast, crew, festivals and a link to the film.
 export const filmDetails = {
   'cuz-youre-ugly':{
-    synopsis:'Avigail, a wild and insecure naval cadet, comes home on weekend leave to the cramped Jerusalem flat she shares with her checked-out mother and her naïve 15-year-old sister. She is determined to finally lose her virginity before she reports back for duty — until her little sister announces that she is pregnant.',
+    synopsis:'Avigail, an overweight and insecure 18-year-old midshipwoman, returns home to the stuffy apartment in Jerusalem which she shares with her dysfunctional mother and with her young sister. Avigail hopes to untie the chains of her childhood, But something else happens when she returns home: Her young sister got knocked up. Now, instead of getting rid of her virginity- she has to get rid of a baby.',
     cast:['Riki Reif Sinai','Ori Avinoam','Yaël Abecassis','Yossi Marshek','Ben Sultan'],
     crew:[['Written & directed by','Sharon Angelhart'],['Producers','Shlomi Elkabetz, Galit Cahlon, Amos Holzman, Paul Cadieux'],['Cinematography','Matan Radin'],['Editing','Gadi Mozes'],['Art direction','Shaked Naor'],['Costume design','Rachel Ben Dahan'],['Music','Eric Shaw'],['Sound design','Martin Cadieux-Rouillard'],['Casting','Rita Borodiyanski']],
     festivals:['Jerusalem Film Festival 2025 — Best Performance, Riki Reif Sinai','Ophir Awards 2025 — Best Supporting Actress, Ori Avinoam','Ophir Awards 2025 — Best Casting','Cinema South Festival — Best Israeli Debut','UK Jewish Film Festival','Israel Film Festival (Los Angeles)','Toronto Jewish Film Festival','Israel Film Center Festival (New York)','Kitzbühel Film Festival (Austria)','Jewish Film Festival Vienna'],
