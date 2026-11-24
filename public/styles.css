@@ -193,4 +193,7 @@ body.intro-page{overflow:hidden}
 /* Work gallery: centered film titles, 7% smaller. */
 .work-section .card-title{justify-content:center;text-align:center}
 .work-section .card-title h3{width:100%;font-size:18.6px}
-@media(max-width:720px){.work-section .card-title h3{font-size:17.67px}}
+@media(max-width:720px){
+ .work-section .card-title h3{font-size:clamp(10px,2.85vw,13px);overflow-wrap:normal;word-break:normal;hyphens:none}
+ .works-grid .film-card:nth-child(3) .card-title h3{white-space:nowrap}
+}
