@@ -8,7 +8,7 @@ test('all generated pages have working local links and assets',async()=>{
  for(const route of routes){
   const html=await readFile(`dist${route}index.html`,'utf8');
   assert.match(html,/<html lang="en">/);assert.match(html,/<main id="main"[^>]*>/);
-  for(const [,url]of html.matchAll(/(?:href|src)="(\/[^"#]*)"/g)){
+  for(const [,url]of html.matchAll(/(?:href|src)="(\/[^"#?]*)/g)){
    const local=url.endsWith('/')?`${url}index.html`:url;
    assert.ok((await stat(`dist${local}`)).isFile(),`${route}: missing ${url}`);
   }
