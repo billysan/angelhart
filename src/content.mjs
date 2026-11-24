@@ -55,6 +55,7 @@ export const filmDetails = {
     cast:['Lily Simone Ivgy','Naomi Oren','Noam Imber','Yoav Rosenberg'],
     crew:[['Written & directed by','Sharon Angelhart'],['Producer','Amos Holzman'],['Cinematography','Matan Radin'],['Editing','Guy Nemesh'],['Art direction','Noa Yarkoni'],['Sound design','Yuval Bar On'],['Colour','Ron Ben Meir']],
     festivals:['Cinema South Festival 2020','Supported by the Gesher Multicultural Film Fund and the Israel Film Council'],
+    trailer:{src:'/assets/video/money-trailer.mp4',poster:'/assets/video/money-trailer.jpg',width:1280,height:720},
     link:null
   }
 };

@@ -115,7 +115,7 @@ body{isolation:isolate}
 
  .film-grid .film-image{aspect-ratio:16/10}
  .card-title{flex-direction:row;gap:12px}
- .portrait{height:auto;width:70%}
+ .portrait{height:auto;width:70%;margin-inline:auto}
  .film-cover{aspect-ratio:4/3}
  .film-facts>div{font-size:12px}
  .trailer-placeholder{min-height:200px}
