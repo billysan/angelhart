@@ -23,3 +23,35 @@ export const featureStills = [
   {image:'/assets/stills/cuz-youre-ugly-3.jpg',alt:'Two women eating ice lollies outside a shop'},
   {image:'/assets/stills/cuz-youre-ugly-4.jpg',alt:'Avigail standing between two shirtless young men'}
 ];
+
+// Film page details: synopsis, cast, crew, festivals and a link to the film.
+export const filmDetails = {
+  'cuz-youre-ugly':{
+    synopsis:'Avigail, a wild and insecure naval cadet, comes home on weekend leave to the cramped Jerusalem flat she shares with her checked-out mother and her naïve 15-year-old sister. She is determined to finally lose her virginity before she reports back for duty — until her little sister announces that she is pregnant.',
+    cast:['Riki Reif Sinai','Ori Avinoam','Yaël Abecassis','Yossi Marshek','Ben Sultan'],
+    crew:[['Written & directed by','Sharon Angelhart'],['Producers','Shlomi Elkabetz, Galit Cahlon, Amos Holzman, Paul Cadieux'],['Cinematography','Matan Radin'],['Editing','Gadi Mozes'],['Art direction','Shaked Naor'],['Costume design','Rachel Ben Dahan'],['Music','Eric Shaw'],['Sound design','Martin Cadieux-Rouillard'],['Casting','Rita Borodiyanski']],
+    festivals:['Jerusalem Film Festival 2025 — Best Performance, Riki Reif Sinai','Ophir Awards 2025 — Best Supporting Actress, Ori Avinoam','Ophir Awards 2025 — Best Casting','Cinema South Festival — Best Israeli Debut','UK Jewish Film Festival — English premiere','Israel Film Festival (Los Angeles) — US premiere'],
+    link:{url:'https://www.imdb.com/title/tt37496804/',label:'View on IMDb'}
+  },
+  'in-your-hands':{
+    synopsis:'After begging her to come home, a mother picks her daughter up at the airport. On the drive she breaks some unexpected news, then takes her somewhere unfamiliar where mother and daughter end up trading roles.',
+    cast:['Mediha Musliović','Lidija Kordić','Vahida Ljubunčić'],
+    crew:[['Written & directed by','Maša Šarović, Sharon Angelhart'],['Producers','Ama Bakšić Čamo, Armin Hadžić, Dominique Wellinski'],['Production','Obala Art Centar, DW'],['Cinematography','Marko Milovanović'],['Editing','Una Gunjak']],
+    festivals:['Cannes Directors’ Fortnight 2019 — opening segment of SEE Factory: Sarajevo mon amour','Sarajevo Film Festival 2019','Zagreb Film Festival 2020'],
+    link:null
+  },
+  'nightswimming':{
+    synopsis:'Twenty-two-year-old Shira lives in isolation with her dysfunctional mother. A surprise visit from her older sister, just before she leaves for Paris, shatters their fragile peace.',
+    cast:['Avigail Harari','Sharon Tal','Omri Anghel'],
+    crew:[['Written & directed by','Sharon Angelhart'],['Producer','Yanai Himelfarb'],['Cinematography','Daniel Miller'],['Editing','Neta Braun']],
+    festivals:['Graduation film, Sam Spiegel Film & Television School, Jerusalem (2013)','Screened at festivals in Israel and abroad'],
+    link:{url:'https://vimeo.com/54444525',label:'Watch the trailer on Vimeo'}
+  },
+  'money':{
+    synopsis:'Two best friends’ last night out before one of them enlists in the army. It is hard to tell where one ends and the other begins — or what happens when one leaves and the other stays.',
+    cast:['Lily Simone Ivgy','Naomi Oren','Noam Imber','Yoav Rosenberg'],
+    crew:[['Written & directed by','Sharon Angelhart'],['Producer','Amos Holzman'],['Cinematography','Matan Radin'],['Editing','Guy Nemesh'],['Art direction','Noa Yarkoni'],['Sound design','Yuval Bar On'],['Colour','Ron Ben Meir']],
+    festivals:['Cinema South Festival 2020','Supported by the Gesher Multicultural Film Fund and the Israel Film Council'],
+    link:null
+  }
+};
