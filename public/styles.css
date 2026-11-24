@@ -208,6 +208,6 @@ body.intro-page{overflow:hidden}
 .press-card:has([data-press-modal="press-cinema-qa"]) .press-image img,
 .press-card:has([data-press-modal="press-cinema-city"]) .press-image img,
 .press-card:has([data-press-modal="press-youtube-podcast-gmhbgfcqzoi"]) .press-image img{object-fit:cover;object-position:center;background:transparent}
-.film-trailer{width:min(820px,calc(100% - 2*var(--gutter)));margin:48px auto 0}
+.film-trailer{width:min(560px,calc(100% - 2*var(--gutter)));margin:48px auto 0}
 .film-trailer h2{margin:0 0 16px}
 .film-trailer video{display:block;width:100%;height:auto;background:#000}
