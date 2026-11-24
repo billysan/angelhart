@@ -211,3 +211,8 @@ body.intro-page{overflow:hidden}
 .film-trailer{width:min(560px,calc(100% - 2*var(--gutter)));margin:48px auto 0}
 .film-trailer h2{margin:0 0 16px}
 .film-trailer video{display:block;width:100%;height:auto;background:#000}
+
+/* Keep the source/outlet label pinned to each Press card's bottom edge. */
+.press-card>a{display:flex;flex-direction:column}
+.press-caption{display:flex;flex:1;flex-direction:column}
+.press-outlet{margin-top:auto;padding-top:12px}
