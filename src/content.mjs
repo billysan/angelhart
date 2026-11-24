@@ -16,7 +16,7 @@ export const media = [
   {id:'cinema-qa',type:'Podcast',outlet:'Cinema Q&A · Episode 51',title:'From the first film to the next',language:'Hebrew',image:'/assets/cinema-qa-cropped.webp',alt:'Sharon Angelhart speaking into a microphone at the Cinema Shoot podcast studio',digestLabel:'English overview · publisher description',digest:["In a conversation with Avi Ludmir, Sharon Angelhart discusses the long development of her first feature, her childhood in Jerusalem, and how she came to filmmaking.","The episode description also highlights casting, the 17-day shoot, her work as a script editor, and the next film in development."],originalLabel:'Watch podcast',url:'https://www.youtube.com/watch?v=L5X_ytFYW04'},
   {id:'youtube-podcast-gmhbgfcqzoi',type:'Podcast',outlet:'YouTube',title:'Podcast conversation',language:null,image:'https://i.ytimg.com/vi/GmhBgfCqZOI/mqdefault.jpg',alt:'Video thumbnail for an additional podcast episode',digestLabel:'Video episode',digest:['Watch this podcast episode on YouTube.'],originalLabel:'Watch podcast',url:'https://youtu.be/GmhBgfCqZOI'},
 ];
-export const contacts = {email:'suay.angelhart@gmail.com',representation:null,imdb:'https://www.imdb.com/name/nm7091650/',letterboxd:'https://boxd.it/IFtq',instagram:'https://www.instagram.com/suayangelhart/?ig_mid=CA7DE6B6-29EB-4C0C-B2E5-1FFBBE456C34&utm_source=igweb'};
+export const contacts = {email:'hello@sharonangelhart.com',representation:null,imdb:'https://www.imdb.com/name/nm7091650/',letterboxd:'https://boxd.it/IFtq',instagram:'https://www.instagram.com/suayangelhart/?ig_mid=CA7DE6B6-29EB-4C0C-B2E5-1FFBBE456C34&utm_source=igweb'};
 
 export const featureStills = [
   {image:'/assets/stills/cuz-youre-ugly-5.jpg',alt:'Avigail taking a flash selfie in a mirror'},
