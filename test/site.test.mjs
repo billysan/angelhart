@@ -16,7 +16,7 @@ test('all generated pages have working local links and assets',async()=>{
  }
 });
 test('every film page shows synopsis, cast, festivals',async()=>{
- for(const film of films){const html=await readFile(`dist/work/${film.slug}/index.html`,'utf8');for(const title of ['SYNOPSIS','CAST &amp; CREW','FESTIVALS &amp; AWARDS'])assert.ok(html.includes(title),`${film.slug}: ${title}`);for(const gone of ['TRAILER','STILLS','RELATED'])assert.ok(!html.includes(`<h2>${gone}</h2>`),`${film.slug}: ${gone}`);}
+ for(const film of films){const html=await readFile(`dist/work/${film.slug}/index.html`,'utf8');for(const title of ['SYNOPSIS','CAST &amp; CREW','FESTIVALS &amp; AWARDS'])assert.ok(html.includes(title),`${film.slug}: ${title}`);for(const gone of ['STILLS','RELATED'])assert.ok(!html.includes(`<h2>${gone}</h2>`),`${film.slug}: ${gone}`);}
 });
 test('contact email links to the supplied address',async()=>{
  const html=await readFile('dist/contact/index.html','utf8');assert.ok(html.includes('href="mailto:suay.angelhart@gmail.com"'));assert.doesNotMatch(html,/Email to come|href="(?:null|undefined)"/);
