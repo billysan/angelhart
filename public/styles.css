@@ -42,7 +42,6 @@ body{isolation:isolate}
 .section{padding:38px var(--gutter)}
 .section+.section{padding-top:20px}
 .section-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:26px}
-.featured-work{max-width:1000px;margin-bottom:48px}
 .film-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
 .film-image{aspect-ratio:16/10;overflow:hidden;background:var(--surface)}
 .film-grid .film-image{aspect-ratio:4/3}
@@ -113,7 +112,7 @@ body{isolation:isolate}
  h1{font-size:24px}h2{font-size:21px}h3{font-size:19px}
  .page-heading{padding-top:26px}.section{padding-block:30px}
  .film-grid,.biography,.bts-grid,.media-grid,.film-overview{grid-template-columns:1fr;gap:30px}
- .featured-work{margin-bottom:36px}
+
  .film-grid .film-image{aspect-ratio:16/10}
  .card-title{flex-direction:row;gap:12px}
  .portrait{height:auto}
@@ -162,8 +161,7 @@ main{view-transition-name:page-content;outline:none}
 .credits-list dd{margin:0;font-size:14px;color:var(--muted)}
 @media(max-width:720px){.credits-list>div{gap:14px}.credits-list dd{font-size:13px}}
 
-.featured-work.has-poster{max-width:460px}
-.featured-work.has-poster .film-image,.film-cover.has-poster{aspect-ratio:1200/1693}
+.film-cover.has-poster{aspect-ratio:1200/1693}
 .film-cover.has-poster{max-width:560px}
 
 /* Minimal plus entrance; existing cinematic slide show remains behind it. */
@@ -176,3 +174,7 @@ body.intro-page{overflow:hidden}
 .plus-entry svg{width:44px;height:44px}
 .plus-entry:hover,.plus-entry:focus-visible{color:#ffd4ed;transform:scale(1.08);filter:drop-shadow(0 0 10px #ff69b4cc)}
 @media(prefers-reduced-motion:reduce){.plus-entry{transition:none}}
+.works-grid{display:grid;grid-template-columns:1.15fr repeat(3,minmax(0,1fr));gap:24px;align-items:start;max-width:1120px}
+.works-grid .film-image{aspect-ratio:1200/1693}
+.works-grid .film-image>img{width:100%;height:100%;object-fit:cover}
+@media(max-width:720px){.works-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 16px}.works-grid h3{font-size:16px}}
