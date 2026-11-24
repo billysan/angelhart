@@ -1,4 +1,8 @@
-import {mkdir,writeFile,cp,rm} from 'node:fs/promises';
+import {mkdir,writeFile,cp,rm,readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+// Append a content hash to local asset URLs so browsers fetch changed files.
+const hashes=new Map();
+const versioned=async html=>{for(const [,u] of html.matchAll(/(?:src|href)="(\/(?:assets\/[^"?#]+|styles\.css|app\.js))"/g)){if(!hashes.has(u)){try{hashes.set(u,createHash('md5').update(await readFile('public'+decodeURI(u))).digest('hex').slice(0,8));}catch{hashes.set(u,null);}}}return html.replace(/(src|href)="(\/(?:assets\/[^"?#]+|styles\.css|app\.js))"/g,(m,a,u)=>hashes.get(u)?`${a}="${u}?v=${hashes.get(u)}"`:m);};
 import {films,media,contacts,featureStills,filmDetails} from '../src/content.mjs';
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link=(url,label,cls='')=>`<a class="${cls}" href="${escape(url)}"${url.startsWith('http')?' target="_blank" rel="noopener noreferrer"':''}>${label}</a>`;
@@ -33,6 +37,6 @@ const creditPlaceholders=()=>`<dl class="credits-list">${['CAST 1','CAST 2','CAS
 const filmPage=(f,i)=>{const d=filmDetails[f.slug]||{};return `<section class="film-heading"><h1>${f.title}</h1></section><div class="film-cover${f.poster?' has-poster':''}">${filmImage(f)}</div><section class="section film-details"><h2>SYNOPSIS</h2><p>${escape(d.synopsis||'Synopsis to come.')}</p><h2>CAST &amp; CREW</h2><ul class="cast-list">${(d.cast||[]).map(n=>`<li>${escape(n)}</li>`).join('')}</ul><dl class="credits-list">${(d.crew||[]).map(([r,n])=>`<div><dt>${escape(r)}</dt><dd>${escape(n)}</dd></div>`).join('')}</dl><h2>FESTIVALS &amp; AWARDS</h2><ul class="festival-list">${(d.festivals||[]).map(x=>`<li>${escape(x)}</li>`).join('')}</ul>${d.link?`<p class="film-watch">${link(d.link.url,d.link.label,'film-watch-link')}</p>`:''}</section>`;};
 await rm('dist',{recursive:true,force:true});await mkdir('dist',{recursive:true});await cp('public','dist',{recursive:true});
 const pages=[['index.html','Home','',intro()],['work/index.html','Work','Work',work()],['about/index.html','About','About',about()],['press/index.html','Press','Press',press()],['contact/index.html','Contact','Contact',contact()],...films.map((f,i)=>[`work/${f.slug}/index.html`,f.title,'Work',filmPage(f,i)])];
-for(const[path,title,active,body]of pages){await mkdir('dist/'+path.substring(0,path.lastIndexOf('/')+1),{recursive:true});await writeFile('dist/'+path,layout(title,active,body));}
+for(const[path,title,active,body]of pages){await mkdir('dist/'+path.substring(0,path.lastIndexOf('/')+1),{recursive:true});await writeFile('dist/'+path,await versioned(layout(title,active,body)));}
 await writeFile('dist/404.html',layout('Page not found','',`<section class="page-heading"><h1>Page not found.</h1><p>This page could not be found.</p>${link('/','Return home','button')}</section>`));
 console.log(`Built ${pages.length} pages plus a 404 page in dist/`);
