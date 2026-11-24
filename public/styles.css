@@ -174,7 +174,8 @@ body.intro-page{overflow:hidden}
 .plus-entry svg{width:44px;height:44px}
 .plus-entry:hover,.plus-entry:focus-visible{color:#ffd4ed;transform:scale(1.08);filter:drop-shadow(0 0 10px #ff69b4cc)}
 @media(prefers-reduced-motion:reduce){.plus-entry{transition:none}}
-.works-grid{display:grid;grid-template-columns:1.15fr repeat(3,minmax(0,1fr));gap:24px;align-items:start;max-width:1120px}
+.works-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 24px;align-items:start;max-width:804px}
+.works-grid>.film-card:first-child{grid-column:1/-1;width:min(100%,350px)}
 .works-grid .film-image{aspect-ratio:1200/1693}
 .works-grid .film-image>img{width:100%;height:100%;object-fit:cover}
-@media(max-width:720px){.works-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 16px}.works-grid h3{font-size:16px}}
+@media(max-width:720px){.works-grid{gap:28px 12px}.works-grid>.film-card:first-child{width:62%}.works-grid h3{font-size:14px}.works-grid .placeholder{padding:10px;font-size:11px}.works-grid .film-kind{font-size:10px;right:6px}}
