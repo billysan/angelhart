@@ -12,12 +12,13 @@ const filmCard=(f)=>`<article class="film-card">${link(`/work/${f.slug}/`,`<div 
 const mediaItem=m=>`<article class="press-card"><a href="${escape(m.url)}" data-press-modal="press-${m.id}" aria-haspopup="dialog"><div class="press-image"><img src="${m.image}" alt="${m.alt}" width="1200" height="800" loading="lazy"></div><div class="press-caption"><p class="eyebrow">${m.type.toUpperCase()}</p><h3>${m.title}</h3><p class="press-outlet">${m.outlet}</p></div></a></article>`;
 const mediaDialog=m=>`<dialog class="press-dialog" id="press-${m.id}" aria-labelledby="press-title-${m.id}"><article class="press-digest"><button class="modal-close" type="button" data-close-modal aria-label="Close digest">×</button><p class="eyebrow">${m.type.toUpperCase()} · ${m.outlet}${m.author?' · '+m.author:''}</p><h2 id="press-title-${m.id}">${m.title}</h2><p class="digest-language">${m.digestLabel}</p>${m.digest.map(paragraph=>`<p>${escape(paragraph)}</p>`).join('')}<div class="digest-source">${link(m.url,m.originalLabel,'text-link')}${m.language?`<span>Original in ${escape(m.language)}</span>`:''}</div></article></dialog>`;
 const mediaGallery=items=>`<div class="press-grid">${items.map(mediaItem).join('')}</div>${items.map(mediaDialog).join('')}`;
-const socialProfiles=[['imdb','IMDb'],['instagram','Instagram'],['letterboxd','Letterboxd']];
+const socialProfiles=[['imdb','IMDb'],['instagram','Instagram'],['letterboxd','Letterboxd'],['vimeo','Vimeo']];
 const socialIcon=key=>{
   const icons={
     imdb:'<rect x="1" y="5" width="30" height="22" rx="3" fill="currentColor"/><text x="16" y="20" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="var(--bg)" stroke="none" style="text-shadow:none">IMDb</text>',
     instagram:'<rect x="5" y="5" width="22" height="22" rx="6"/><circle cx="16" cy="16" r="5"/><circle cx="23" cy="9" r="1" fill="currentColor" stroke="none"/>',
-    letterboxd:'<circle cx="7" cy="16" r="6" fill="currentColor" stroke="none"/><circle cx="16" cy="16" r="6" fill="currentColor" stroke="none" opacity=".7"/><circle cx="25" cy="16" r="6" fill="currentColor" stroke="none" opacity=".45"/>'
+    letterboxd:'<circle cx="7" cy="16" r="6" fill="currentColor" stroke="none"/><circle cx="16" cy="16" r="6" fill="currentColor" stroke="none" opacity=".7"/><circle cx="25" cy="16" r="6" fill="currentColor" stroke="none" opacity=".45"/>',
+    vimeo:'<rect x="3" y="6" width="26" height="20" rx="4"/><path d="M13 11.5v9l7.5-4.5z" fill="currentColor" stroke="none"/>'
   };
   return `<svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">${icons[key]}</svg>`;
 };
