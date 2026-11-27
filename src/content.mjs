@@ -24,14 +24,14 @@ export const media = [
 export const contacts = {email:'hello@sharonangelhart.com',representation:null,imdb:'https://www.imdb.com/name/nm7091650/',letterboxd:'https://boxd.it/IFtq',vimeo:'https://vimeo.com/user4853055',instagram:'https://www.instagram.com/suayangelhart/?ig_mid=CA7DE6B6-29EB-4C0C-B2E5-1FFBBE456C34&utm_source=igweb'};
 
 export const featureStills = [
-  {image:'/assets/stills/cuz-youre-ugly-5.jpg',alt:'Avigail taking a flash selfie in a mirror'},
+  {image:'/assets/stills/cuz-youre-ugly-5.jpg',mobile:{pos:'57% 50%'},alt:'Avigail taking a flash selfie in a mirror'},
   {image:'/assets/stills/nightswimming-2.jpg',alt:'A couple kissing on a pool deck at dusk, silhouetted against cypress trees'},
-  {image:'/assets/stills/money-1.jpg',alt:'Two young women at night under neon lights, one in a leopard-print coat'},
+  {image:'/assets/stills/money-1.jpg',mobile:{fit:'contain',scale:1.15,origin:'50% 50%'},alt:'Two young women at night under neon lights, one in a leopard-print coat'},
   {image:'/assets/stills/cuz-youre-ugly-6.jpg',alt:'A woman and a soldier by a wall at night beneath Love and Scary neon signs'},
   {image:'/assets/stills/nightswimming-3.jpg',focus:'18% 50%',alt:'Two women floating on their backs in a dark pool, seen from above'},
-  {image:'/assets/stills/money-2.jpg',alt:'Two friends taking a selfie on a seaside promenade at dusk'},
-  {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
-  {image:'/assets/stills/nightswimming-1.jpg',alt:'Three women reflected in a mirror, one in a gold and black swimsuit'}
+  {image:'/assets/stills/money-2.jpg',mobile:{fit:'contain',scale:1.5,origin:'70% 50%'},alt:'Two friends taking a selfie on a seaside promenade at dusk'},
+  {image:'/assets/stills/cuz-youre-ugly-11.jpg',mobile:{pos:'45% 50%'},alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
+  {image:'/assets/stills/nightswimming-1.jpg',mobile:{fit:'contain',scale:1.7,origin:'88% 50%'},alt:'Three women reflected in a mirror, one in a gold and black swimsuit'}
 ];
 
 // Film page details: synopsis, cast, crew, festivals and a link to the film.
