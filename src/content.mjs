@@ -28,7 +28,6 @@ export const featureStills = [
   {image:'/assets/stills/money-1.jpg',alt:'Two young women at night under neon lights, one in a leopard-print coat'},
   {image:'/assets/stills/nightswimming-1.jpg',alt:'Two women floating on their backs in a pool, seen from above'},
   {image:'/assets/stills/in-your-hands-1.jpg',alt:'A woman in a dark coat by a car among bare snowy trees'},
-  {image:'/assets/stills/film-photo-4.jpg',alt:'Sun flaring down a busy New York street'},
   {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
   {image:'/assets/stills/money-2.jpg',alt:'Two friends taking a selfie on a seaside promenade at dusk'},
   {image:'/assets/stills/nightswimming-2.jpg',alt:'A young woman in profile beside a pool at dusk'},
