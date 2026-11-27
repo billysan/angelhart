@@ -31,7 +31,8 @@ export const featureStills = [
   {image:'/assets/stills/money-2.jpg',alt:'Two friends taking a selfie on a seaside promenade at dusk'},
   {image:'/assets/stills/film-photo-1.jpg',alt:'Abstract blur of warm red light'},
   {image:'/assets/stills/cuz-youre-ugly-4.jpg',alt:'Avigail standing between two shirtless young men'},
-  {image:'/assets/stills/money-3.jpg',alt:'Two friends hugging on an armchair at night, one holding a beer'}
+  {image:'/assets/stills/money-3.jpg',alt:'Two friends hugging on an armchair at night, one holding a beer'},
+  {image:'/assets/stills/nightswimming-1.jpg',alt:'Three women reflected in a mirror, one in a gold and black swimsuit'}
 ];
 
 // Film page details: synopsis, cast, crew, festivals and a link to the film.
