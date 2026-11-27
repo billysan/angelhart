@@ -12,13 +12,21 @@ if(menu && nav){
 
 const background=document.querySelector('.home-background');
 if(background){
-  const slides=[...background.querySelectorAll('[data-background-slide]')];
+  const all=[...background.querySelectorAll('[data-background-slide]')];
+  // The mirror selfie always opens; the rest play in a fresh random order each
+  // round, each with a slightly different random crop.
+  const shuffle=list=>{for(let i=list.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[list[i],list[j]]=[list[j],list[i]];}return list;};
+  const recrop=slide=>{const img=slide.querySelector('img');if(!img)return;const r=()=>Math.round(25+Math.random()*50);img.style.objectPosition=`${r()}% ${r()}%`;img.style.transform=`scale(${(1+Math.random()*0.18).toFixed(3)})`;};
+  const rest=all.slice(1);
+  const slides=[all[0],...shuffle(rest.slice())];
+  rest.forEach(recrop);
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
   let index=0,playing=!reduced.matches,timer=null,busy=false;
   async function advance(){
     if(busy)return;
     busy=true;
-    const next=(index+1)%slides.length;
+    let next=(index+1)%slides.length;
+    if(next===0){const current=slides[index];const order=shuffle(rest.slice());if(order[0]===current&&order.length>1)order.push(order.shift());slides.splice(1,slides.length-1,...order);next=1;order.forEach(s=>{if(s!==current)recrop(s);});}
     try{
       const image=slides[next].querySelector('img');
       image.loading='eager';
