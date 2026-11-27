@@ -30,7 +30,10 @@ export const featureStills = [
   {image:'/assets/stills/cuz-youre-ugly-8.jpg',alt:'Avigail in uniform sitting beside her mother on the sofa'},
   {image:'/assets/stills/cuz-youre-ugly-9.jpg',alt:'Avigail eating alone at the kitchen table at night'},
   {image:'/assets/stills/cuz-youre-ugly-10.jpg',alt:'Avigail in uniform standing in the sea at dusk'},
-  {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'}
+  {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
+  {image:'/assets/stills/film-photo-1.jpg',alt:'Abstract blur of warm red light'},
+  {image:'/assets/stills/film-photo-2.jpg',alt:'A dim New York bedroom with light through two windows'},
+  {image:'/assets/stills/film-photo-4.jpg',alt:'Sun flaring down a busy New York street'}
 ];
 
 // Film page details: synopsis, cast, crew, festivals and a link to the film.
