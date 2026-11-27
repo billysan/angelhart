@@ -218,3 +218,5 @@ body.intro-page{overflow:hidden}
 .press-grid .press-caption h3{font-size:15px;line-height:1.4;overflow-wrap:normal;word-break:normal;hyphens:manual}
 @media(max-width:720px){.press-caption{padding:12px}.press-grid .press-caption h3{font-size:13px}}
 .home-background{inset:auto;top:0;left:0;width:100%;height:100vh;height:100lvh}
+.background-slide img{object-position:var(--pos,50% 50%)}
+@media(max-width:720px){.background-slide img{object-position:var(--m-pos,var(--pos,50% 50%));object-fit:var(--m-fit,cover);transform:scale(var(--m-scale,1));transform-origin:var(--m-origin,50% 50%)}}
