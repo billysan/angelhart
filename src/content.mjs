@@ -28,7 +28,7 @@ export const featureStills = [
   {image:'/assets/stills/nightswimming-2.jpg',alt:'A couple kissing on a pool deck at dusk, silhouetted against cypress trees'},
   {image:'/assets/stills/money-1.jpg',alt:'Two young women at night under neon lights, one in a leopard-print coat'},
   {image:'/assets/stills/cuz-youre-ugly-6.jpg',alt:'A woman and a soldier by a wall at night beneath Love and Scary neon signs'},
-  {image:'/assets/stills/nightswimming-3.jpg',alt:'Two women floating on their backs in a dark pool, seen from above'},
+  {image:'/assets/stills/nightswimming-3.jpg',focus:'18% 50%',alt:'Two women floating on their backs in a dark pool, seen from above'},
   {image:'/assets/stills/money-2.jpg',alt:'Two friends taking a selfie on a seaside promenade at dusk'},
   {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
   {image:'/assets/stills/nightswimming-1.jpg',alt:'Three women reflected in a mirror, one in a gold and black swimsuit'}
