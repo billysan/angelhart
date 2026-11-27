@@ -22,18 +22,17 @@ export const contacts = {email:'hello@sharonangelhart.com',representation:null,i
 
 export const featureStills = [
   {image:'/assets/stills/cuz-youre-ugly-5.jpg',alt:'Avigail taking a flash selfie in a mirror'},
+  {image:'/assets/stills/film-photo-4.jpg',alt:'Sun flaring down a busy New York street'},
   {image:'/assets/stills/cuz-youre-ugly-6.jpg',alt:'A woman and a soldier by a wall at night beneath Love and Scary neon signs'},
   {image:'/assets/stills/cuz-youre-ugly-2.jpg',alt:'Two sisters relaxing on sun loungers beside a swimming pool'},
-  {image:'/assets/stills/cuz-youre-ugly-3.jpg',alt:'Two women eating ice lollies outside a shop'},
-  {image:'/assets/stills/cuz-youre-ugly-4.jpg',alt:'Avigail standing between two shirtless young men'},
+  {image:'/assets/stills/film-photo-1.jpg',alt:'Abstract blur of warm red light'},
   {image:'/assets/stills/cuz-youre-ugly-7.jpg',alt:'The younger sister lying on her bed with her phone in a pink bedroom'},
-  {image:'/assets/stills/cuz-youre-ugly-8.jpg',alt:'Avigail in uniform sitting beside her mother on the sofa'},
-  {image:'/assets/stills/cuz-youre-ugly-9.jpg',alt:'Avigail eating alone at the kitchen table at night'},
+  {image:'/assets/stills/cuz-youre-ugly-3.jpg',alt:'Two women eating ice lollies outside a shop'},
+  {image:'/assets/stills/film-photo-2.jpg',alt:'A dim New York bedroom with light through two windows'},
   {image:'/assets/stills/cuz-youre-ugly-10.jpg',alt:'Avigail in uniform standing in the sea at dusk'},
   {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
-  {image:'/assets/stills/film-photo-1.jpg',alt:'Abstract blur of warm red light'},
-  {image:'/assets/stills/film-photo-2.jpg',alt:'A dim New York bedroom with light through two windows'},
-  {image:'/assets/stills/film-photo-4.jpg',alt:'Sun flaring down a busy New York street'}
+  {image:'/assets/stills/cuz-youre-ugly-4.jpg',alt:'Avigail standing between two shirtless young men'},
+  {image:'/assets/stills/cuz-youre-ugly-9.jpg',alt:'Avigail eating alone at the kitchen table at night'}
 ];
 
 // Film page details: synopsis, cast, crew, festivals and a link to the film.
