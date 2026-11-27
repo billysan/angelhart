@@ -29,7 +29,6 @@ export const featureStills = [
   {image:'/assets/stills/cuz-youre-ugly-7.jpg',alt:'The younger sister lying on her bed with her phone in a pink bedroom'},
   {image:'/assets/stills/cuz-youre-ugly-3.jpg',alt:'Two women eating ice lollies outside a shop'},
   {image:'/assets/stills/film-photo-2.jpg',alt:'A dim New York bedroom with light through two windows'},
-  {image:'/assets/stills/cuz-youre-ugly-10.jpg',alt:'Avigail in uniform standing in the sea at dusk'},
   {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
   {image:'/assets/stills/cuz-youre-ugly-4.jpg',alt:'Avigail standing between two shirtless young men'},
   {image:'/assets/stills/cuz-youre-ugly-9.jpg',alt:'Avigail eating alone at the kitchen table at night'}
