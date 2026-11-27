@@ -25,16 +25,13 @@ export const contacts = {email:'hello@sharonangelhart.com',representation:null,i
 
 export const featureStills = [
   {image:'/assets/stills/cuz-youre-ugly-5.jpg',alt:'Avigail taking a flash selfie in a mirror'},
-  {image:'/assets/stills/cuz-youre-ugly-6.jpg',alt:'A woman and a soldier by a wall at night beneath Love and Scary neon signs'},
-  {image:'/assets/stills/money-1.jpg',alt:'Two young women at night under neon lights, one in a leopard-print coat'},
-  {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
-  {image:'/assets/stills/money-2.jpg',alt:'Two friends taking a selfie on a seaside promenade at dusk'},
-  {image:'/assets/stills/film-photo-1.jpg',alt:'Abstract blur of warm red light'},
-  {image:'/assets/stills/cuz-youre-ugly-4.jpg',alt:'Avigail standing between two shirtless young men'},
-  {image:'/assets/stills/money-3.jpg',alt:'Two friends hugging on an armchair at night, one holding a beer'},
-  {image:'/assets/stills/nightswimming-1.jpg',alt:'Three women reflected in a mirror, one in a gold and black swimsuit'},
   {image:'/assets/stills/nightswimming-2.jpg',alt:'A couple kissing on a pool deck at dusk, silhouetted against cypress trees'},
-  {image:'/assets/stills/nightswimming-3.jpg',alt:'Two women floating on their backs in a dark pool, seen from above'}
+  {image:'/assets/stills/money-1.jpg',alt:'Two young women at night under neon lights, one in a leopard-print coat'},
+  {image:'/assets/stills/cuz-youre-ugly-6.jpg',alt:'A woman and a soldier by a wall at night beneath Love and Scary neon signs'},
+  {image:'/assets/stills/nightswimming-3.jpg',alt:'Two women floating on their backs in a dark pool, seen from above'},
+  {image:'/assets/stills/money-2.jpg',alt:'Two friends taking a selfie on a seaside promenade at dusk'},
+  {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
+  {image:'/assets/stills/nightswimming-1.jpg',alt:'Three women reflected in a mirror, one in a gold and black swimsuit'}
 ];
 
 // Film page details: synopsis, cast, crew, festivals and a link to the film.
