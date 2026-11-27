@@ -29,7 +29,8 @@ export const featureStills = [
   {image:'/assets/stills/cuz-youre-ugly-7.jpg',alt:'The younger sister lying on her bed with her phone in a pink bedroom'},
   {image:'/assets/stills/cuz-youre-ugly-8.jpg',alt:'Avigail in uniform sitting beside her mother on the sofa'},
   {image:'/assets/stills/cuz-youre-ugly-9.jpg',alt:'Avigail eating alone at the kitchen table at night'},
-  {image:'/assets/stills/cuz-youre-ugly-10.jpg',alt:'Avigail in uniform standing in the sea at dusk'}
+  {image:'/assets/stills/cuz-youre-ugly-10.jpg',alt:'Avigail in uniform standing in the sea at dusk'},
+  {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'}
 ];
 
 // Film page details: synopsis, cast, crew, festivals and a link to the film.
