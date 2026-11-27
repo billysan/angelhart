@@ -32,7 +32,9 @@ export const featureStills = [
   {image:'/assets/stills/film-photo-1.jpg',alt:'Abstract blur of warm red light'},
   {image:'/assets/stills/cuz-youre-ugly-4.jpg',alt:'Avigail standing between two shirtless young men'},
   {image:'/assets/stills/money-3.jpg',alt:'Two friends hugging on an armchair at night, one holding a beer'},
-  {image:'/assets/stills/nightswimming-1.jpg',alt:'Three women reflected in a mirror, one in a gold and black swimsuit'}
+  {image:'/assets/stills/nightswimming-1.jpg',alt:'Three women reflected in a mirror, one in a gold and black swimsuit'},
+  {image:'/assets/stills/nightswimming-2.jpg',alt:'A couple kissing on a pool deck at dusk, silhouetted against cypress trees'},
+  {image:'/assets/stills/nightswimming-3.jpg',alt:'Two women floating on their backs in a dark pool, seen from above'}
 ];
 
 // Film page details: synopsis, cast, crew, festivals and a link to the film.
