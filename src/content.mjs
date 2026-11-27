@@ -24,19 +24,16 @@ export const contacts = {email:'hello@sharonangelhart.com',representation:null,i
 
 export const featureStills = [
   {image:'/assets/stills/cuz-youre-ugly-5.jpg',alt:'Avigail taking a flash selfie in a mirror'},
-  {image:'/assets/stills/film-photo-4.jpg',alt:'Sun flaring down a busy New York street'},
   {image:'/assets/stills/cuz-youre-ugly-6.jpg',alt:'A woman and a soldier by a wall at night beneath Love and Scary neon signs'},
-  {image:'/assets/stills/cuz-youre-ugly-2.jpg',alt:'Two sisters relaxing on sun loungers beside a swimming pool'},
-  {image:'/assets/stills/film-photo-1.jpg',alt:'Abstract blur of warm red light'},
-  {image:'/assets/stills/cuz-youre-ugly-7.jpg',alt:'The younger sister lying on her bed with her phone in a pink bedroom'},
-  {image:'/assets/stills/cuz-youre-ugly-3.jpg',alt:'Two women eating ice lollies outside a shop'},
-  {image:'/assets/stills/film-photo-2.jpg',alt:'A dim New York bedroom with light through two windows'},
-  {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
-  {image:'/assets/stills/cuz-youre-ugly-4.jpg',alt:'Avigail standing between two shirtless young men'},
-  {image:'/assets/stills/cuz-youre-ugly-9.jpg',alt:'Avigail eating alone at the kitchen table at night'},
   {image:'/assets/stills/money-1.jpg',alt:'Two young women at night under neon lights, one in a leopard-print coat'},
+  {image:'/assets/stills/nightswimming-1.jpg',alt:'Two women floating on their backs in a pool, seen from above'},
+  {image:'/assets/stills/in-your-hands-1.jpg',alt:'A woman in a dark coat by a car among bare snowy trees'},
+  {image:'/assets/stills/film-photo-4.jpg',alt:'Sun flaring down a busy New York street'},
+  {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
   {image:'/assets/stills/money-2.jpg',alt:'Two friends taking a selfie on a seaside promenade at dusk'},
-  {image:'/assets/stills/money-3.jpg',alt:'Two friends hugging on an armchair at night, one holding a beer'}
+  {image:'/assets/stills/nightswimming-2.jpg',alt:'A young woman in profile beside a pool at dusk'},
+  {image:'/assets/stills/in-your-hands-2.jpg',alt:'In the snow, a young woman in a striped fur coat touches the forehead of a woman in a dark coat'},
+  {image:'/assets/stills/film-photo-1.jpg',alt:'Abstract blur of warm red light'}
 ];
 
 // Film page details: synopsis, cast, crew, festivals and a link to the film.
