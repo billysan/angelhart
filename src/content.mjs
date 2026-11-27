@@ -28,7 +28,9 @@ export const featureStills = [
   {image:'/assets/stills/money-1.jpg',alt:'Two young women at night under neon lights, one in a leopard-print coat'},
   {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
   {image:'/assets/stills/money-2.jpg',alt:'Two friends taking a selfie on a seaside promenade at dusk'},
-  {image:'/assets/stills/film-photo-1.jpg',alt:'Abstract blur of warm red light'}
+  {image:'/assets/stills/film-photo-1.jpg',alt:'Abstract blur of warm red light'},
+  {image:'/assets/stills/cuz-youre-ugly-4.jpg',alt:'Avigail standing between two shirtless young men'},
+  {image:'/assets/stills/money-3.jpg',alt:'Two friends hugging on an armchair at night, one holding a beer'}
 ];
 
 // Film page details: synopsis, cast, crew, festivals and a link to the film.
