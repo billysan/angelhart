@@ -26,12 +26,8 @@ export const featureStills = [
   {image:'/assets/stills/cuz-youre-ugly-5.jpg',alt:'Avigail taking a flash selfie in a mirror'},
   {image:'/assets/stills/cuz-youre-ugly-6.jpg',alt:'A woman and a soldier by a wall at night beneath Love and Scary neon signs'},
   {image:'/assets/stills/money-1.jpg',alt:'Two young women at night under neon lights, one in a leopard-print coat'},
-  {image:'/assets/stills/nightswimming-1.jpg',alt:'Two women floating on their backs in a pool, seen from above'},
-  {image:'/assets/stills/in-your-hands-1.jpg',alt:'A woman in a dark coat by a car among bare snowy trees'},
   {image:'/assets/stills/cuz-youre-ugly-11.jpg',alt:'Riki Reif Sinai and Ori Avinoam sitting together, one with her arm around the other'},
   {image:'/assets/stills/money-2.jpg',alt:'Two friends taking a selfie on a seaside promenade at dusk'},
-  {image:'/assets/stills/nightswimming-2.jpg',alt:'A young woman in profile beside a pool at dusk'},
-  {image:'/assets/stills/in-your-hands-2.jpg',alt:'In the snow, a young woman in a striped fur coat touches the forehead of a woman in a dark coat'},
   {image:'/assets/stills/film-photo-1.jpg',alt:'Abstract blur of warm red light'}
 ];
 
